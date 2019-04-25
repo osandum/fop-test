@@ -1,56 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <fop version="1.0">
-    <comlex-scripts-disabled>true</comlex-scripts-disabled>
-
-    <renderers>
-        <renderer mime="application/pdf">
-
-            <version>1.7</version>
-
-            <base>.</base>
-
-            <images mode="b+w" bits-per-pixel="8"/>
-
-            <renderer-resolution>240</renderer-resolution>
-            <line-width-correction>2.5</line-width-correction>
-            <resource-group-file>resources.afp</resource-group-file>
-
-            <fonts>
-                <!-- København -->
-                <font metrics-file="fonts/metrics/Raleway-Regular.xml" kerning="yes" embed-url="fonts/ttf/Raleway-Regular.ttf">
-                    <font-triplet name="SampleFont" style="normal" weight="normal"/>
-                </font>
-                <font metrics-file="fonts/metrics/Raleway-Italic.xml" kerning="yes" embed-url="fonts/ttf/Raleway-Italic.ttf">
-                    <font-triplet name="SampleFont" style="italic" weight="normal"/>
-                </font>
-                <font metrics-file="fonts/metrics/Raleway-Bold.xml" kerning="yes" embed-url="fonts/ttf/Raleway-Bold.ttf">
-                    <font-triplet name="SampleFont" style="normal" weight="bold"/>
-                </font>
-                <font metrics-file="fonts/metrics/Raleway-BoldItalic.xml" kerning="yes" embed-url="fonts/ttf/Raleway-BoldItalic.ttf">
-                    <font-triplet name="SampleFont" style="italic" weight="bold"/>
-                </font>
-            </fonts>
-
-        </renderer>
-
-        <renderer mime="image/svg+xml">
-            <format type="paginated"/>
-            <link value="true"/>
-            <strokeText value="false"/>
-        </renderer>
-
-        <renderer mime="application/awt"></renderer>
-
-        <renderer mime="image/png">
-            <transparent-page-background>true</transparent-page-background>
-        </renderer>
-
-        <renderer mime="image/tiff">
-            <transparent-page-background>true</transparent-page-background>
-            <compression>CCITT T.6</compression>
-        </renderer>
-
-        <renderer mime="text/xml"></renderer>
-    </renderers>
+  <renderers>
+    <renderer mime="application/pdf">
+      <fonts>
+        <!-- København -->
+        <font metrics-file="fonts/metrics/Raleway-Regular.xml" kerning="yes" embed-url="fonts/ttf/Raleway-Regular.ttf">
+          <font-triplet name="SampleFont" style="normal" weight="normal"/>
+        </font>
+        <font metrics-file="fonts/metrics/Raleway-Italic.xml" kerning="yes" embed-url="fonts/ttf/Raleway-Italic.ttf">
+          <font-triplet name="SampleFont" style="italic" weight="normal"/>
+        </font>
+        <font metrics-file="fonts/metrics/Raleway-Bold.xml" kerning="yes" embed-url="fonts/ttf/Raleway-Bold.ttf">
+          <font-triplet name="SampleFont" style="normal" weight="bold"/>
+        </font>
+        <font metrics-file="fonts/metrics/Raleway-BoldItalic.xml" kerning="yes" embed-url="fonts/ttf/Raleway-BoldItalic.ttf">
+          <font-triplet name="SampleFont" style="italic" weight="bold"/>
+        </font>
+      </fonts>
+    </renderer>
+  </renderers>
 </fop>
