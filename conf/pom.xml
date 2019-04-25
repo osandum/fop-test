@@ -13,9 +13,9 @@
     
     <artifactId>fop-conf</artifactId>
 
-    <name>FOP Config ZIP</name>
+    <name>FOP Config</name>
     <description>
-      Builds a ZIP with a tiny config including a free TTF font
+      Builds a jar with a tiny config including a free TTF font
     </description>
 
     <build>
