@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="page-layout">
+            <fo:region-body margin="2.5cm" region-name="body" background-color="#dddddd" />
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+
+    <fo:page-sequence master-reference="page-layout">
+        <fo:flow flow-name="body" font-family="SampleFont">
+            <fo:block font-size="24pt" font-weight="bold" padding-after="6pt">
+                Hello, world!
+            </fo:block>
+            <fo:block padding-before="6pt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum at 
+                tempor commodo. Ultricies leo integer malesuada nunc. Semper auctor neque vitae 
+                tempus quam.
+            </fo:block>
+            <fo:block padding-before="6pt">
+                Ac orci phasellus egestas tellus rutrum tellus pellentesque. Lacus luctus accumsan 
+                tortor posuere ac ut. Et tortor consequat id porta nibh venenatis. Aliquam faucibus 
+                purus in massa tempor nec feugiat. Ac tortor dignissim convallis aenean et. Aliquam 
+                id diam maecenas ultricies mi eget mauris. Dictum at tempor commodo ullamcorper a 
+                lacus vestibulum sed. Tincidunt dui ut ornare lectus sit amet est placerat in. 
+                Ut placerat orci nulla pellentesque dignissim enim sit amet. Augue neque gravida in 
+                fermentum et sollicitudin. Eu scelerisque felis imperdiet proin fermentum leo.
+            </fo:block>
+            <fo:block padding-before="6pt">
+                Et malesuada fames ac turpis. In egestas erat imperdiet sed euismod nisi porta lorem. 
+                Quis risus sed vulputate odio.
+            </fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+
+</fo:root>
