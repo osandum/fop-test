@@ -18,30 +18,8 @@
       Builds a jar with a tiny config including a free TTF font
     </description>
 
-    <build>
+    <!-- build>
         <plugins>
-
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptors>
-                        <descriptor>src/assemble/fop-conf.xml</descriptor>
-                    </descriptors>
-                    <outputDirectory>${project.build.directory}/generated-sources/assembly/resource</outputDirectory>
-                    <finalName>fop-conf</finalName>
-                    <appendAssemblyId>false</appendAssemblyId>
-                    <archiveBaseDirectory>${basedir}</archiveBaseDirectory>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>fop-conf-zip</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -53,25 +31,20 @@
             </plugin>
       
         </plugins>
-    </build>
+    </build -->
 
     <dependencies>
+        <dependency>
+          <groupId>org.apache.xmlgraphics</groupId>
+          <artifactId>fop</artifactId>
+          <version>${fop.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.xmlgraphics</groupId>
-            <artifactId>fop</artifactId>
-            <version>2.3</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
-
-    <properties>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
 </project>
