@@ -4,7 +4,7 @@
 
     <fo:layout-master-set>
         <fo:simple-page-master master-name="page-layout">
-            <fo:region-body margin="2.5cm" region-name="body" background-color="#dddddd" />
+            <fo:region-body margin="2.5cm" region-name="body" background-color="#eeeeee" />
         </fo:simple-page-master>
     </fo:layout-master-set>
 
@@ -14,19 +14,20 @@
                 Hello, world!
             </fo:block>
             <fo:block padding-before="6pt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum at 
-                tempor commodo. Ultricies leo integer malesuada nunc. Semper auctor neque vitae 
-                tempus quam.
+              <fo:inline font-weight="bold">Lorem ipsum dolor sit amet,</fo:inline> consectetur 
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Feugiat in ante metus dictum at tempor commodo. Ultricies leo integer malesuada nunc. 
+                Semper auctor neque vitae tempus quam.
             </fo:block>
             <fo:block padding-before="6pt">
                 Ac orci phasellus egestas tellus rutrum tellus pellentesque. Lacus luctus accumsan 
                 tortor posuere ac ut. Et tortor consequat id porta nibh venenatis. Aliquam faucibus 
                 purus in massa tempor nec feugiat. Ac tortor dignissim convallis aenean et. Aliquam 
                 id diam maecenas ultricies mi eget mauris. Dictum at tempor commodo ullamcorper a 
-                lacus vestibulum sed. Tincidunt dui ut ornare lectus sit amet est placerat in. 
-                Ut placerat orci nulla pellentesque dignissim enim sit amet. Augue neque gravida in 
-                fermentum et sollicitudin. Eu scelerisque felis imperdiet proin fermentum leo.
+                lacus vestibulum sed. Tincidunt dui ut <fo:inline font-style="italic">ornare lectus 
+                sit</fo:inline> amet est placerat in. Ut placerat orci nulla pellentesque dignissim 
+                enim sit amet. Augue neque gravida in fermentum et sollicitudin. Eu scelerisque felis 
+                imperdiet proin fermentum leo.
             </fo:block>
             <fo:block padding-before="6pt">
                 Et malesuada fames ac turpis. In egestas erat imperdiet sed euismod nisi porta lorem. 
